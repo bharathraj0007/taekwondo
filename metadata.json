@@ -1,0 +1,6 @@
+{
+  "name": "Championship Draw",
+  "description": "Premium real-time MERN Taekwondo event management, bracket draw generator, live scorecard broadcast and system engagement analytics system.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

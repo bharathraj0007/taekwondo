@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow-x: clip;
+  -webkit-text-size-adjust: 100%;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  overflow-x: clip;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  max-width: 100%;
+}
+
+/* Fluid typography utilities using clamp */
+.fluid-h1 {
+  font-size: clamp(1.85rem, 5.5vw + 0.25rem, 3.75rem);
+  line-height: 1.08;
+}
+
+.fluid-h2 {
+  font-size: clamp(1.5rem, 4vw + 0.2rem, 2.75rem);
+  line-height: 1.15;
+}
+
+.shader-frame {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 600px;
+  min-height: 320px;
+  max-height: 680px;
+  overflow: hidden !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+.shader-frame iframe,
+.shader-frame .threeui-background,
+.shader-frame .landing-page-frame {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 100% !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  overflow: hidden !important;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+.shader-frame iframe::-webkit-scrollbar,
+.shader-frame::-webkit-scrollbar {
+  display: none !important;
+}
+
+@media (max-width: 1024px) {
+  .shader-frame {
+    height: 520px;
+  }
+}
+
+@media (max-width: 768px) {
+  .shader-frame {
+    height: 420px;
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .shader-frame {
+    height: 340px;
+    min-height: 260px;
+  }
+}
